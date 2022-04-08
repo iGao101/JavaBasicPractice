@@ -15,7 +15,7 @@ public class BasicData {
         // 数据类型之间转换：int -> float, long -> double均会产生精度损失
     }
 
-    public static void operator(){
+    public static void operator() {
         int x = 1;
         x += 3.5; // 等价于：(int) (x + 3,5)
         // x = x + 3.5 会报错
