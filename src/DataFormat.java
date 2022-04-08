@@ -25,6 +25,6 @@ public class DataFormat {
 
     public static void main(String[] args) {
         long curTime = System.currentTimeMillis();
-        System.out.println(transferToDate(curTime));
+        System.out.println(transferToDate(1649322880699L));
     }
 }
