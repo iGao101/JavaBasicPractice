@@ -9,14 +9,14 @@ public class DataFormat {
 
     public static String transferToDate(long curTime) {
         //将毫秒级long值转换成日期格式
-        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return dateformat.format(curTime);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return dateFormat.format(curTime);
     }
 
     public static long transferToTime(String dataStr) {
-        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try {
-            Date date = dateformat.parse(dataStr);
+            Date date = dateFormat.parse(dataStr);
             return date.getTime();
         } catch (ParseException e) {
             return 0L;
